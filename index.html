@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Cyber Monster</title>
+
+    <!-- Load Phaser3 engine -->
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser.min.js"></script>
+
+    <!-- Utility classes for reusability -->
+    <script src="utilities/alignGrid.js"></script>
+    <script src="utilities/align.js"></script>  
+    
+    <script src="utility-modules/MovementManager.js"></script>
+    <script src="utility-modules/EnemyObject.js"></script>
+    <script src="utility-modules/InstructionObject.js"></script>
+    <script src="units/Unit.js"></script>
+    <script src="menu/Menu.js"></script>
+
+    <!-- Preload sequence -->
+    <script src="scenes/boot.js"></script>
+    <script src="scenes/title.js"></script>
+    <script src="scenes/preload.js"></script>
+
+    <!-- Game setup and scripts -->
+    <script src="scenes/world.js"></script>
+    <script src="scenes/playerUI.js"></script>
+    <script src="scenes/pause.js"></script>
+    <script src="scenes/gameMap.js"></script>
+    <script src="scenes/phishing.js"></script>
+
+    <script src="scenes/battle.js"></script>
+    <script src="scenes/battleUI.js"></script>
+    <script src="scenes/dialog.js"></script>
+    <script src="scenes/book.js"></script>
+
+    <script src="scenes/teachinglevelscript.js"></script>
+
+    <script  src="scenes/MainMenu.js"></script>
+    <script type="text/javascript" src="scenes/StoryScene.js"></script>
+    <script type="text/javascript" src="scenes/Event_1.js"></script>
+    <script type="text/javascript" src="scenes/Event_2.js"></script>
+    <script type="text/javascript" src="scenes/Event_3.js"></script>
+    <script type="text/javascript" src="scenes/Event_4.js"></script>
+    <script type="text/javascript" src="scenes/Event_5.js"></script>
+    <script type="text/javascript" src="scenes/Event_6.js"></script>
+    <script type="text/javascript" src="scenes/Event_7.js"></script>
+    <script type="text/javascript" src="scenes/Event_8.js"></script>
+    <script type="text/javascript" src="scenes/Event_9.js"></script>
+    <script type="text/javascript" src="scenes/Event_10.js"></script>
+    <script type="text/javascript" src="scenes/Event_11.js"></script>
+    <script type="text/javascript" src="scenes/Event_12.js"></script>
+    <script type="text/javascript" src="scenes/EndingMenu.js"></script>
+
+    <!-- Configs of the game are here -->
+    <script src="game.js"></script>
+
+    <!-- Content Scheduler/Switcher -->
+    <script defer src="scripts/contentSwitcher.js"></script>
+
+    <!-- Outside scripts follow. -->
+    <script defer src="scripts/other.js"></script>
+
+
+    <!------------ YOUR SCRIPTS GO HERE. ------------>
+
+    <!-- Malware Teaching Level Scripts and Scenes -->
+    <!-- <script src="/scenes/teachinglevelscript.js"></script> -->
+    
+    <!-- Malware Testing  Script -->
+    <script defer src="scripts/hangman.js"></script>
+
+    <!-- Encryption script -->
+    <script defer src="scripts/encryption_script.js"></script>
+
+
+
+</head>
+
+
+
+
+    <!-- Whole game world (made in Phaser3) -->
+    <div id="gameContainer"></div>
+
+    <!-- Example of an outside "game module" that is manipulated through a separate file -->
+    <!-- <div class="gameModule" id="module1" style="background-color:lightgreen"></div> -->
+    <!-- And so forth... -->
+
+
+
+    <!------------ Malware Module ----------------->
+
+    <!-- Malware Instructions Module -->
+    <div class="gameModule" id="instruction0"></div>
+
+    <!-- Malware Test Module -->
+    <div class="gameModule" id="module0"></div>
+    <script src="module-content/malware-testing.js"></script>  
+
+
+
+    <!------------ Encrytion Module ----------------->
+
+    <!-- Encrytion Instruction Module -->
+    <div class="gameModule" id="instruction1"></div>
+    <script src="module-content/encryption-teaching.js"></script>        
+       
+
+    <!-- Encrytion Test Module -->
+    <div class="gameModule" id="module1"></div>
+    <script src="module-content/encryption-testing.js"></script>     
+
+
+
+
+
+    <!------------ Backup Module ----------------->
+
+    <!-- Backup Instruction Module -->
+    <div class="gameModule" id="instruction2"></div>
+    <script src="module-content/backup-teaching.js"></script>
+
+    <!-- Backup Instruction Test -->
+    <div class="gameModule" id="module2"></div>
+
+
+
+
+    <!------------ Phishing Module ----------------->
+    <!--<script src="PhishingEmails/Emailscripts.js"></script>--------->
+   
+    <!-- Backup Instruction Module -->
+    <div class="gameModule" id="instruction3"></div>
+    <script defer src="module-content/emails.js"></script>
+    <script src="module-content/phishing-teaching.js"></script>
+
+
+    <div class="gameModule" id="module3">Test</div>
+    <script src="module-content/phishing-testing.js"></script>
+    <script  src="Emailscripts.js"></script>
+
+    <link rel="stylesheet" href="styles/emailStyle.css">
+
+ 
+
+
+
+
+    <!------------ Password Module ----------------->
+
+    <!-- Password Instruction Module -->
+    <div class="gameModule" id="instruction4">
+
+
+
+
+            <script type="text/javascript"src="scripts/passWordproject.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/passWordproject.css">
+
+
+
+
+            <h2 id="topic"><bold>Learn  how to create a Password </bold></h2>
+
+
+
+            <h1> With hackers becoming more and more cunning in their methods and attempt to steal your data, it is  
+             more,important than ever to use “secure passwords” that make it difficult for crackers to break.</h1>
+            <br>
+            <h1> Not only that,it is imperative that you use a range of different secure passwords for different sites. This is because in  the event of one of your passwords is compromised, the others will remain safe.</h1>
+            <img src="assets/images/hacker.png">
+            <h1>           Passwords are everywhere and here are some short rules to remember when creating a password  </h1>
+            <br>
+            <h1><li>       The password should be 8 or more characters long</li></h1>
+            <h1><li>       Longer passwords are better than shorter passwords</li></h1>
+            <h1><li>       Alternate upper and lowercase letters</li></h1>
+            <h1><li>       Use symbols like # in your password.</li></h1>
+            <h1><li>       Passwords should not be made up of dictionnary words names or dates</li></h1>
+             
+
+               
+                <img  id="lock" src="assets/images/password.png"height=50px width=50px> 
+                <br>
+                <input  id="password-box" type="password"> 
+
+                     
+                    <br>
+                    <div id="password-time" class="hsimp-time"></div>
+                    <ul id="password-checks" class="hsimp-checks"></ul><br>
+                 <h1>Practice in the input feild  what you think is a secure password and then click the test your knowledge to play  the password guessing  game  </h1>
+                 <br>
+                 <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <button  id="myButton" bold onclick= "switchBack();" >Got it!</button>
+
+            <script>
+            function switchToPasswordTest() {
+                window.scrollTo(0, 0);
+              document.getElementById("instruction4").style.display = "none";
+              document.getElementById("module4").style.display = "block";
+            }
+            </script>
+             
+            <br>
+                    
+                    
+                   
+                    
+                    <script src="scripts/hsimp.min.js"></script>
+                    <script>
+                        (function (doc) {
+                            var passwordInput = doc.getElementById("password-box"),
+                                timeDiv = doc.getElementById("password-time"),
+                                checksList = doc.getElementById("password-checks");
+
+                            // Code to render the time returned by HSIMP
+                            var renderTime = function (time, input) {
+                                timeDiv.innerHTML = time || "";
+                            };
+
+                            // Code to output the checks returned by HSIMP
+                            var renderChecks = function (checks, input) {
+                                checksList.innerHTML = "";
+
+                                for (var i = 0, l = checks.length; i < l; i++) {
+                                    var li = doc.createElement("li"),
+                                        title = doc.createElement("h2"),
+                                        message = doc.createElement("p");
+
+                                    title.innerHTML = checks[i].name;
+                                    li.appendChild(title);
+
+                                    message.innerHTML = checks[i].message;
+                                    li.appendChild(message);
+
+                                    checksList.appendChild(li);
+                                }
+                            };
+
+                            // Setup the HSIMP object
+                            var attachTo = hsimp({
+                                options: {
+                                    calculationsPerSecond: 10e9, // 10 billion calculations per second
+                                    good: 31557600e9, // 1 billion years
+                                    ok: 31557600e3 // 1 thousand years
+                                },
+                                outputTime: renderTime,
+                                outputChecks: renderChecks
+                            });
+                            
+                            // setup custom values for "instantly"/"forever"
+                            hsimp.setDictionary({
+                                "instantly": "Immediately",
+                                "forever": "Aaaaaaaaaaaaaaaages",
+                            });
+
+                            // Run the HSIMP
+                            attachTo(passwordInput);
+                        }(this.document));
+                    </script>
+                    <br>
+    </div>
+
+    <!--<script src="module-content/password-teaching.js"></script>   -->
+
+
+    <!-- Password Test Module -->
+    <div class="gameModule" id="module4">
+
+
+                <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+         
+        <link rel="stylesheet" href="styles/hsimp.css">
+        <link rel="stylesheet" href="styles/passwordTest.css">
+       
+                
+
+                 
+                  <!--<div  id =special class="container">
+                        <img id="img1" src="question-sign.png"  height="10" width="42"alt="question-sign">
+                    <script>rotateAnimation("img1",20);</script>-->
+                    
+               
+   
+                     
+                </audio>  
+                   <!-- </div>-->
+                 <div>       <span class="text1">Password</span>
+                     <span class="text2">Challenge</span></div>
+
+                         
+                        
+                    
+
+                      <div id="boxed">
+                    <h1>Which password below do you think will take the least amount of time to crack?
+                     A good password should not have repeat characters.<br> The password should have a non numeric 
+                      character.<br> Longer passwords are better than shorter passwords.</h1>
+                    </div> 
+                    
+
+
+                   <h1 id="difficulty">Choose a difficulty</h1>
+                   <br> 
+                   <button  onclick="newvalues()">Easy</button>
+                    <button   onclick="myFunction()"> Hard</button> 
+                    <br> 
+                  <div id=container class=myclass>
+               
+              <div class="questions"name="Name1"></div>
+              <div class="questions"name="Name2"></div>
+              <div class="questions"name="Name3"></div>
+              <div class="questions"name="Name4"></div>
+              <div class="questions"name="Name5"></div>
+              <div class="questions"name="Name6"></div>
+              <div class="questions"name="Name7"></div>
+              <div class="questions"name="Name8"></div>
+               
+              </div>
+
+              <span class="typingEffect" id=colorDisplay> RBG</span> 
+                  <div id="message1"></div>
+                     
+                      <span id="message4"></span>
+               <div>
+                <br>
+                <input id="password-box" type="hidden" value="hidden">
+                <br>
+                  
+                    <div id="password-time" class="hsimp-time"></div><br>
+                    <ul id="password-checks" class="hsimp-checks"></ul>
+
+             <button id="doneButt" level++;
+            levelPassed = true; onclick="doneWithPassword()">Done</button>
+            <br>
+                    
+                    
+                   
+                    
+                    <script src="scripts/hsimp.min.js"></script>
+                    <script>
+                        (function (doc) {
+                            var passwordInput = doc.getElementById("password-box"),
+                                timeDiv = doc.getElementById("password-time"),
+                                checksList = doc.getElementById("password-checks");
+
+                            // Code to render the time returned by HSIMP
+                            var renderTime = function (time, input) {
+                                timeDiv.innerHTML = time || "";
+                            };
+
+                            // Code to output the checks returned by HSIMP
+                            var renderChecks = function (checks, input) {
+                                checksList.innerHTML = "";
+
+                                for (var i = 0, l = checks.length; i < l; i++) {
+                                    var li = doc.createElement("li"),
+                                        title = doc.createElement("h2"),
+                                        message = doc.createElement("p");
+
+                                    title.innerHTML = checks[i].name;
+                                    li.appendChild(title);
+
+                                    message.innerHTML = checks[i].message;
+                                    li.appendChild(message);
+
+                                    checksList.appendChild(li);
+                                }
+                            };
+
+                            // Setup the HSIMP object
+                            var attachTo = hsimp({
+                                options: {
+                                    calculationsPerSecond: 10e9, // 10 billion calculations per second
+                                    good: 31557600e9, // 1 billion years
+                                    ok: 31557600e3 // 1 thousand years
+                                },
+                                outputTime: renderTime,
+                                outputChecks: renderChecks
+                            });
+                            
+                            // setup custom values for "instantly"/"forever"
+                            hsimp.setDictionary({
+                                "instantly": "Immediately",
+                                "forever": "Aaaaaaaaaaaaaaaages",
+                            });
+
+                            // Run the HSIMP
+                            attachTo(passwordInput);
+                        }(this.document));
+                    </script>
+                    <br>
+
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <script type="text/javascript"src="scripts/passWordproject.js"></script>
+                    <link rel="stylesheet" type="text/css" href="styles/passWordproject.css">
+             
+                  
+                       
+              <style >
+
+                     
+            <!-- <script src="/app.js"></script>
+
+
+
+
+
+</html>
