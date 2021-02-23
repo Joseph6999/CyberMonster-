@@ -75,7 +75,7 @@ let currentContentID = null;
 let heartsCounter = 3;
 let contaminationLevel = 5;
 
-let level =4;
+let level =1;
 let levelPassed = 0;
 let sceneRestart = true;
 let sceneRestart2 = true;
